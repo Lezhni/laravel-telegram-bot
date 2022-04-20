@@ -1,0 +1,16 @@
+.table {
+  &-id {
+    min-width: 150px !important;
+    width: 150px !important;
+  }
+
+
+  &-action {
+    min-width: 100px !important;
+    width: 100px !important;
+  }
+}
+
+.table-bordered thead th, .table-bordered thead td {
+  vertical-align: middle;
+}

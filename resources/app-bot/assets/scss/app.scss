@@ -1,0 +1,79 @@
+@import "vars";
+@import "templates/header";
+@import "templates/table";
+@import "templates/nestable";
+
+body {
+  overflow-y: scroll;
+}
+
+.responsive-row {
+  overflow: hidden;
+}
+.dropdown-item {
+  &.active, &:focus, &:active {
+    background-color: rgba(23, 162, 184, 0.7);
+  }
+}
+
+.creacept {
+  &-header {
+    //background-color: $creacept-green;
+  }
+
+  &-form-wrap {
+    background-color: $creacept-form-wrap;
+    border: 1px solid $creacept-form-border;
+  }
+}
+
+th, td {
+  text-align: center;
+}
+
+.b-calendar-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  color: #17A2B8;
+
+  &:hover {
+    color: #17A2B8;
+  }
+}
+
+.tabs .router-link-active {
+  color: white;
+  //background-color: #0F5132;
+  background-color: #17A2B8;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.page-item.active .page-link{
+  background-color: #17A2B8;
+  border-color: #17A2B8;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #17A2B8;
+  background-color: #17A2B8;
+}
+
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: rgba(23,162,184, 0.5);
+}
+
+section {
+  padding-top: 56px;
+  padding-bottom: 50px;
+}
+
+.footer-buttons {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
